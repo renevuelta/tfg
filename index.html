@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección Aleatoria</title>
+    <script>
+        var urls = [
+            "https://forms.gle/zQS2e53sWZYMZUR18",
+            "https://forms.gle/tkA22i37ZvXdzcyz7"
+        ];
+
+        function redireccionarAleatoriamente() {
+            var indiceAleatorio = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[indiceAleatorio];
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="redireccionarAleatoriamente()">Ir a un formulario aleatorio</a>
+</body>
+</html>
